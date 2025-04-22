@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="../index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>CRUD APPLICATION WITH LOCALSTORAGE</h2>
+        <form >
+        <div class="search">
+            <input type="text" placeholder="Search..." id="searchBox">
+            <i class="fas fa-search" id="searchButton"></i>
+        </div> 
+
+    </div class="divclass">
+    <div style="display: flex;">   
+        <div class="row ">
+            
+            <div class = "form-group">
+                <div class ="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class ="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" class="form-control" id="age" placeholder="Enter Your Age">
+                </div>
+                <div class ="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" class="form-control" id="email" placeholder="Enter Your mail">
+                </div>
+                <div class ="form-group">
+                    <label for="number">Mobile No</label>
+                    <input type="number" name="number" class="form-control" id="number" placeholder="Enter Your Mobile number">
+                </div>
+                <div class="col">
+                    
+                    <button class="btnadd" id="submit" onclick="AddData()">
+                      Add  <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="btnupdate" id="update" onclick="AddData()" >  
+                        Update<i class="fa-solid fa-rotate"></i>
+                      </button>
+
+                      <button class="btnreset" id="reset">
+                        Reset<i class="fa-solid fa-rotate"></i>
+                      </button>
+    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-border">
+                <table id="crudtable">
+                    <thead> 
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Mobile No</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                               
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+</form >
+
+    <script src="./script.js"></script>
+</body>
+</html>

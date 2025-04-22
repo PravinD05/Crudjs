@@ -1,0 +1,215 @@
+#Update{
+    display: none;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter",sans-serif;                                                                                      ;
+} 
+.row {
+    background-color: rgb(150, 165, 205);
+
+}
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style:oblique;
+}
+
+.form-control{
+    
+    padding:10px 50px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    margin: 10px 0;
+    width:500px;
+    
+}
+
+.form-group{
+    margin: 2px;
+    border-radius: 2px;
+     display: flex;
+    flex-direction: column;
+    background-color:rgb(174, 204, 227);
+    padding: 8px;
+ 
+}
+
+.btnadd{
+    padding: 5px 20px;
+    gap: 5px;
+    font-size: 13px; 
+    text-align: center;
+    color:  rgba(18, 2, 2, 0.655);
+    border: none;
+    background-color: rgb(165, 84, 241);
+    margin: 15px 0;
+    margin-right: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.btnadd:hover{
+    color: white;
+}
+
+.btnupdate{
+    padding: 5px 20px;
+    gap: 5px;
+    font-size: 13px; 
+    text-align: center;
+    color: rgba(18, 2, 2, 0.655);
+    border: none;
+    background-color:rgb(215, 96, 215);
+    cursor: pointer;
+    margin-left: 11px;
+    border-radius: 10px;
+}
+.btnreset {
+    padding: 5px 20px;
+    gap: 5px;
+    font-size: 13px; 
+    text-align: center;
+    color: rgba(18, 2, 2, 0.655);
+    border: none;
+    background-color:rgb(220, 106, 117);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left:60px;
+}
+
+.btnreset:hover {
+    color: white;
+}
+
+.btnupdate:hover {
+    color: white;
+}
+
+table{
+    text-align: center;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    min-width: 600px;
+    width:930px
+
+ }
+ 
+ table thead tr{
+
+    text-align:center;
+    background-color: rgb(218, 170, 49);
+    color: #fff;
+    border-color: crimson;
+ }
+
+
+ table thead tr th{
+    text-align: center;
+    border-color: rgb(20, 2, 6);
+    font-weight: 500;
+ }
+
+
+ table td,
+ table th {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+ }
+ .btndelete {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.549);
+    font-size: 15px;
+    padding: 5px 10px;
+    display: flex;
+    background-color: rgb(17, 73, 151);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 2px ;
+    height: 30px;
+    margin-left: 15px;
+    width:100px;
+ 
+  }
+  .btndelete:hover{
+    color:white;
+  }
+
+  .btnedit{
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 15px;
+    padding: 5px 10px;
+    display:flex;
+    margin: 15px 2px;
+    background-color: rgb(198, 102, 50);
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+    margin-left:10px;
+    width:100px;
+
+  }
+ .btnedit:hover{
+    color:white;
+ }
+
+ .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0,0,0,0.2);
+ }
+
+ .search input{
+    outline:none;
+    border:none;
+    font-weight: 400;
+    font-size: 18px;
+    transition: 0.8s;
+    color: #757575;
+    background: transparent;
+    padding-right: 0;
+ }
+
+ .search input.active{
+    width: 300px;
+    padding-right: 20px;
+ }
+
+ .search .fa-search {
+    color:rgb(44, 45, 45);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search .fa-close{
+    color:rgb(58, 58, 58);
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.search input.active + .fa-search{
+    display: none;
+}
+
+.search input.active + .fa-close{
+    display: block;
+}
